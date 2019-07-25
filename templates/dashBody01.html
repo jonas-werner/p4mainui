@@ -1,0 +1,215 @@
+
+
+{% include 'head.html' %}
+
+
+    <div class="col-sm-9">
+        <div class="well">
+          <h4>Dashboard</h4>
+          <p>Some text..</p>
+          <p>Some text..</p>
+          <p>Some text..</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="well">
+              <h4>Featured Character</h4>
+              <p>{{marvelCharacterName}}</p> 
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="well">
+              <h4>Picture</h4>
+              <img src="{{marvelCharacterPicture}}"> 
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="well">
+              <h4>Sessions</h4>
+              <p>10 Million</p> 
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="well">
+              <h4>Bounce</h4>
+              <p>30%</p> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="well">
+              <p>Text</p> 
+              <p>Text</p> 
+              <p>Text</p> 
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+              <p>Text</p> 
+              <p>Text</p> 
+              <p>Text</p> 
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+              <p>Text</p> 
+              <p>Text</p> 
+              <p>Text</p> 
+              <p>Text</p> 
+              <p>Text</p> 
+              <p>Text</p> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="well" id="chart">
+              <p>Text</p> 
+              <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+  
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="well">
+              <p>Text</p> 
+            </div>
+          </div>
+        </div>
+  
+
+    
+      </div>
+
+      <main role="main">
+          <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+              <h1>Navbar examples</h1>
+              <p>This example is a quick exercise to illustrate how the navbar and its contents work. Some navbars extend the width of the viewport, others are confined within a <code>.container</code>. For positioning of navbars, checkout the <a href="../navbar-top/">top</a> and <a href="../navbar-top-fixed/">fixed top</a> examples.</p>
+              <p>At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button to toggle the collapsed content.</p>
+              <p>
+                <a class="btn btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+              </p>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-sm-2"></div>
+  
+            <div class="col-sm-4">
+              <div class="alert alert-success">
+                <strong>Success!</strong> Indicates a successful or positive action.
+              </div>
+            </div>
+  
+            <div class="col-sm-4">
+                <div class="alert alert-info">
+                  <strong>Success!</strong> Indicates a successful or positive action.
+                </div>
+            </div>
+    
+            <div class="col-sm-2"></div>
+          </div> 
+  
+          <div class="row">
+            <div class="col-sm-2"></div>
+  
+            <div class="col-sm-4">
+              <div class="alert alert-warning">
+                <strong>Success!</strong> Indicates a successful or positive action.
+              </div>
+            </div>
+  
+            <div class="col-sm-4">
+                <div class="alert alert-danger">
+                  <strong>Success!</strong> Indicates a successful or positive action.
+                </div>
+                <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+  
+            </div>
+    
+            <div class="col-sm-2"></div>
+          </div> 
+  
+  
+          <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+              <h1>Navbar examples</h1>
+              <p>This example is a quick exercise to illustrate how the navbar and its contents work. Some navbars extend the width of the viewport, others are confined within a <code>.container</code>. For positioning of navbars, checkout the <a href="../navbar-top/">top</a> and <a href="../navbar-top-fixed/">fixed top</a> examples.</p>
+              <p>At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button to toggle the collapsed content.</p>
+              <p>
+                <a class="btn btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+              </p>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </div>
+          </div>
+  
+          <div class="col-sm-14">
+              <div class="well">
+                <p>Data provided by Marvel. © 2014 Marvel</p>
+              </div>
+          </div>
+  
+  
+        </main>
+  
+  
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="../../../../assets/js/vendor/popper.min.js"></script>
+      <script src="../../../../dist/js/bootstrap.min.js"></script>
+      <!-- Icons -->
+      <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <script>
+        feather.replace()
+      </script>
+  
+      <!-- Graphs -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+      <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            datasets: [{
+              data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+              lineTension: 0.4,
+              backgroundColor: 'transparent',
+              borderColor: '#007bff',
+              borderWidth: 4,
+              pointBackgroundColor: '#007bff'
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: false
+                }
+              }]
+            },
+            legend: {
+              display: false,
+            }
+          }
+        });
+      </script>
+  
+  </body>
+  </html>
+  

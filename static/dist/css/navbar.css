@@ -1,0 +1,22 @@
+body {
+  padding-bottom: 20px;
+  background: url('../../assets/img/background1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.well {
+  background-color: #0055a4;
+  height: 100%;
+  color: aliceblue;
+}
+
+.jumbotron {
+  background: rgba(255, 255, 255, 0.7);             /* Transparent background */
+}

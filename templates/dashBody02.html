@@ -1,0 +1,74 @@
+
+{% include 'head.html' %}
+
+
+
+      <main role="main">
+          <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+              <h1>Multi-Environment Orchestration and Visceral Visualization (MEOW)</h1>
+              <p>Personal Pied Piper Project (P4) for the class of 2019</p>
+              <p>This project aims to provide gathering of sensor data, visualization of said data as well as the ability to orchestrate the creation of VMs and containers both locally and on multiple public cloud providers. </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-4">
+              <div class="alert alert-success">
+                <strong>Success!</strong> Indicates a successful or positive action.
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="alert alert-info">
+                  <strong>Success!</strong> Indicates a successful or positive action.
+                </div>
+            </div>
+
+            <div class="col-sm-2"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-4">
+              <div class="alert alert-warning">
+                <strong>Success!</strong> Indicates a successful or positive action.
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="alert alert-danger">
+                  <strong>Success!</strong> Indicates a successful or positive action.
+                </div>
+                <!-- <canvas class="my-4" id="myChart" width="900" height="380"></canvas> -->
+
+            </div>
+
+            <div class="col-sm-2"></div>
+          </div>
+
+
+
+
+        </main>
+
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src={{ url_for("static", filename="assets/js/vendor/jquery-slim.min.js") }}><\/script>')</script>
+      <script src={{ url_for('static', filename='assets/js/vendor/popper.min.js') }}></script>
+      <script src={{ url_for('static', filename='dist/js/bootstrap.min.js') }}></script>
+      <!-- Icons -->
+      <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <script>
+        feather.replace()
+      </script>
+
+
+  </body>
+  </html>

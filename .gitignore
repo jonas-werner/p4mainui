@@ -1,0 +1,10 @@
+# Ignore git
+.git 
+
+# Ignore local environment setting files
+*.env
+
+# Ignore venv
+venv
+
+

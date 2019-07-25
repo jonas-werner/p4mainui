@@ -1,0 +1,101 @@
+
+{% include 'head.html' %}
+
+
+
+      <main role="main">
+
+        <div class="row">
+          <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 mx-auto">
+          <div class="alert alert-info" style="background-color: whitesmoke">
+            <h1>Some statistics for the p4mainui PWS instance</h1>
+            <p>Every page hit results in increasing the counter for that pages entry in a MongoDB. This page shows those statistics. </p>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+<!-- Chart start -->
+          <div class="row">
+            <div class="col-sm-2"></div>
+
+          <div class="col-sm-8 mx-auto">
+            <div class="alert alert-info" style="background-color: whitesmoke">
+              <h3>Page hit statistics since last cf push</h3>
+              <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+
+            </div>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+<!-- Chart end -->
+
+
+
+        </main>
+
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src={{ url_for("static", filename="assets/js/vendor/jquery-slim.min.js") }}><\/script>')</script>
+      <script src={{ url_for('static', filename='assets/js/vendor/popper.min.js') }}></script>
+      <script src={{ url_for('static', filename='dist/js/bootstrap.min.js') }}></script>
+      <!-- Icons -->
+      <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <script>
+        feather.replace()
+      </script>
+
+      <!-- Graphs -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+      <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["apiSCB", "apiChuckNorris", "apiFelines", "apiNasa", "apiMath", "apiMarvel", "root"],
+            datasets: [{
+              data: {{hitCountValues}},
+              lineTension: 0.4,
+              backgroundColor: [
+                                  'rgba(255, 99, 132, 0.2)',
+                                  'rgba(54, 162, 235, 0.2)',
+                                  'rgba(255, 206, 86, 0.2)',
+                                  'rgba(75, 192, 192, 0.2)',
+                                  'rgba(153, 102, 255, 0.2)',
+                                  'rgba(255, 99, 132, 0.2)',
+                                  'rgba(54, 162, 235, 0.2)'
+                                ],
+              borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)'
+                            ],
+              borderWidth: 1,
+              pointBackgroundColor: '#c0c0c0'
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: false
+                }
+              }]
+            },
+            legend: {
+              display: false,
+            }
+          }
+        });
+      </script>
+
+  </body>
+  </html>

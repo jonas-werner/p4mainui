@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/favicon.ico">
+
+    <title>MEOW Pied Piper - Dashboard</title>
+    <!-- Bootstrap core CSS -->
+    <link href={{ url_for('static', filename='dist/css/bootstrap.min.css') }} rel="stylesheet">
+    <!-- <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href={{ url_for('static', filename='dist/css/navbar.css') }} rel="stylesheet">
+  </head>
+
+  <body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="http://p4mainui.cfapps.io">MEOW Console</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="http://p4mainui.cfapps.io"><span data-feather="activity"></span> <span class="sr-only">(current)</span></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Marvel news</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Statistics</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+              <a class="dropdown-item" href="http://p4mainui.cfapps.io/apiSCB">Swedish government database</a>
+              <a class="dropdown-item" href="http://p4mainui.cfapps.io/localStats">Page hit statistics of this website</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entertainment</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="http://p4mainui.cfapps.io/apiMarvel">Marvel hero info</a>
+              <a class="dropdown-item" href="http://p4mainui.cfapps.io/apiChuckNorris">Chuck Norris jokes</a>
+              <a class="dropdown-item" href="http://p4mainui.cfapps.io/apiStarWars">Star Wars ship info</a>
+              <a class="dropdown-item" href="http://p4mainui.cfapps.io/apiNasa">Nasa pic of the day</a>
+              <a class="dropdown-item" href="http://p4mainui.cfapps.io/apiFelines">Cat facts</a>
+              <a class="dropdown-item" href="http://p4mainui.cfapps.io/apiMath">Math trivia</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deployment</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown05">
+              <a class="dropdown-item" href="http://192.168.2.93:5010/vagrantVmViewLocal">View running VMs</a>
+              <a class="dropdown-item" href="#">Deploy Vagrant VM</a>
+              <a class="dropdown-item" href="http://192.168.2.93:5010/dockerContViewLocal">View running containers</a>
+              <a class="dropdown-item" href="http://192.168.2.93:5010/dockerContDeployLocal">Deploy container on Private Cloud</a>
+              <a class="dropdown-item" href="#">Deploy container on Azure</a>
+              <a class="dropdown-item" href="#">Deploy container on DigitalOcean</a>
+              <a class="dropdown-item" href="#">Deploy container on AWS</a>
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Logout</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control" type="text" placeholder="Search">
+        </form>
+      </div>
+    </nav>

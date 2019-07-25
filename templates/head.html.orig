@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    /* .row.content {height: 550px} */
+    .row.content {height: 1050px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #003563;
+      height: 100%;
+    }
+
+    .well {
+      background-color: #0055a4;
+      height: 100%;
+      color: aliceblue;
+    }
+
+    #chart {
+      background-color: #ffffff;
+      color: black;
+    }
+
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+    /* Set a background image by replacing the URL below */
+    body {
+    background: url('http://jonamiki.com/wp-content/uploads/2014/10/pattern-en41.png');
+    }
+  </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">MEOW Console</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><span data-feather="activity"></span> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Marvel news</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Deployment menu</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown05">
+              <a class="d-flex align-items-center text-muted" href="#"><span data-feather="activity"></span> Deploy VM</a>
+              <a class="dropdown-item" href="#"><span data-feather="github"></span> Deploy container on Azure</a>
+              <a class="dropdown-item" href="#"><span data-feather="gitlab"></span> Deploy container on DigitalOcean</a>
+              <a class="dropdown-item" href="#"><span data-feather="globe"></span> Deploy container on AWS</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Logout</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control" type="text" placeholder="Search">
+        </form>
+      </div>
+    </nav>
+
+<!-- <nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">MEOW Dashboard</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#">Age</a></li>
+        <li><a href="#">Gender</a></li>
+        <li><a href="#">Geo</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<div class="container-fluid">
+  <div class="row content">
+    <!-- <div class="col-sm-3 sidenav hidden-xs">
+      <br>
+      <center><img src="http://jonamiki.com/wp-content/uploads/2019/07/golang_mascot.png" height=50px></center>
+      <br>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Dashboard</a></li>
+        <li><a href="#section2">Age</a></li>
+        <li><a href="#section3">Gender</a></li>
+        <li><a href="#section3">Geo</a></li>
+      </ul><br>
+    </div> -->
+    <br>

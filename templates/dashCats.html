@@ -1,0 +1,48 @@
+
+{% include 'head.html' %}
+
+
+
+      <main role="main">
+          <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+              <h1>{{ title1 }}</h1>
+              <p> {{ bodyText1 }} </p>
+
+            </div>
+          </div>
+
+          <div class="row">
+                <!-- <div class="col-sm-8 mx-auto"> -->
+                        {% for entry in results %}
+                        <div class="col-sm-2" style="background-color: whitesmoke; width: 30%; border: 2px solid gray">
+                    {{ entry }}
+
+
+                  </div>
+                  {%endfor%}
+                <!-- </div> -->
+          </div>
+
+
+
+
+        </main>
+
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src={{ url_for("static", filename="assets/js/vendor/jquery-slim.min.js") }}><\/script>')</script>
+      <script src={{ url_for('static', filename='assets/js/vendor/popper.min.js') }}></script>
+      <script src={{ url_for('static', filename='dist/js/bootstrap.min.js') }}></script>
+      <!-- Icons -->
+      <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <script>
+        feather.replace()
+      </script>
+
+
+  </body>
+  </html>
